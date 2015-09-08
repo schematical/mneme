@@ -1,0 +1,35 @@
+body{ background-color: #e4e4e4; color: #333333; }
+
+p > img{ max-width: 100%; margin-top: 15px; }
+
+article,
+section{ margin-bottom: 20px; }
+section.home-template,
+section.tag-template{ min-height: 600px; }
+
+footer{ text-align: center; min-height: 50px; margin-top: 20px; overflow: hidden; padding: 10px 0 10px 0; }
+footer > .container{  }
+footer p{ margin: 0; color: #959595; font-size: small; }
+footer p > a{ color: inherit; }
+footer p > a:hover{ color: inherit; }
+
+.widgets{ text-align: center; margin: 20px 0 20px 0; }
+.widgets > .widget{ display: inline-block;}
+
+.grid-item-image{ display: none; }
+.grid-item-image > .thumbnail > .image-wrapper{  }
+.grid-item-image > .thumbnail > .image-wrapper > img{ width: 100%; }
+.grid-item-image.unloaded > .thumbnail > .image-wrapper,
+.grid-item-image.loading > .thumbnail > .image-wrapper{ background-color: #e74c3c; }
+.grid-item-image.unloaded > .thumbnail > .image-wrapper > img,
+.grid-item-image.loading > .thumbnail > .image-wrapper > img{ visibility: hidden; height: 140px; }
+
+div.tags{ border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px; }
+
+.img-crop{ height: 150px; width: 150px; overflow: hidden; position: relative; display: inline-block; border: 5px solid #ffffff; margin: 10px; }
+.img-crop > .img{ height: 150px; width: 150px; background-position: center center; background-size: cover; }
+
+.author-profile{ text-align: center; background-position: center center; background-size: cover; padding: 20px 0 20px 0; }
+.author-profile pre{ background-color: transparent; color: inherit; font-size: inherit; font-family: inherit; border: none; }
+.author-profile.author-profile-cover{ color: #ffffff; }
+.author-profile.author-profile-cover a{ color: #ffffff; }

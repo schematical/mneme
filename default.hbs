@@ -1,0 +1,90 @@
+<!DOCTYPE html lang="ko">
+<html>
+<head>
+	{{! Document Settings }}
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Thoughts, stories and ideas." />
+
+	{{! Page Meta }}
+	<title>{{@blog.title}}</title>
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+    {{! Styles'n'Scripts }}
+    <!--<link rel="stylesheet" href="{{asset "libraries/jquery-ui/jquery-ui.min.css"}}" charset="utf8" />-->
+    <link rel="stylesheet" href="{{asset "libraries/bootstrap/css/bootstrap.min.css"}}" charset="utf8" />
+    <link rel="stylesheet" href="{{asset "css/bootstrap_messier219.css"}}" charset="utf8" />
+    <link rel="stylesheet" href="{{asset "css/layout.css"}}" charset="utf8" />
+
+	{{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    <nav class="navbar navbar-default">
+        <div class="container limit-width">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+
+                {{#if @blog.logo}}
+                    <a class="navbar-brand img" href="{{@blog.url}}">
+                        <img alt="{{@blog.title}}" src="{{@blog.logo}}">
+                    </a>
+                {{^}}
+                    <a class="navbar-brand" href="{{@blog.url}}">{{@blog.title}}</a>
+                {{/if}}
+
+            </div>
+
+            {{{navigation}}}
+
+        </div>
+    </nav>
+
+	{{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{> footer}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <!--<script>
+        // Load Styles
+        var cb = function( src ) {
+            var cssHrefs = [
+                '{{asset "libraries/bootstrap/css/bootstrap.min.css"}}',
+                //'{{asset "libraries/prism/prism.css"}}',
+                //'{{asset "css/bootstrap_messier219.css"}}',
+                //'{{asset "css/layout.css"}}'
+            ];
+            for( var i=0; i<cssHrefs.length; i++ ){
+                var l = document.createElement('link');
+                    l.rel = 'stylesheet';
+                    l.href = cssHrefs[i];
+                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+            }
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if(raf){
+            raf(cb);
+        }else{
+            window.addEventListener('load', cb);
+        }
+    </script>-->
+
+    <!--<script src="{{asset "libraries/jquery/jquery-1.11.3.min.js"}}"></script>-->
+    <!--<script src="{{asset "libraries/jquery-ui/jquery-ui.min.js"}}"></script>-->
+    <script src="{{asset "libraries/bootstrap/js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "libraries/imagesloaded/imagesloaded.pkgd.min.js"}}"></script>
+    <script src="{{asset "libraries/masonry/masonry.pkgd.min.js"}}"></script>
+    <script src="{{asset "js/index.js"}}"></script>
+</body>
+
+</html>

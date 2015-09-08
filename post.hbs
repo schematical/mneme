@@ -1,0 +1,51 @@
+{{!< default}}
+<link rel="stylesheet" href="{{asset "libraries/prism/prism.css"}}" charset="utf8" />
+<script src="{{asset "libraries/prism/prism.js"}}"></script>
+{{#post}}
+<article class="{{post_class}}">
+
+    <div class="container limit-width">
+        <div class="page-header">
+            <h1>{{title}}</h1>
+            <time>{{date}}</time>
+        </div>
+        {{content}}
+
+
+        {{#if tags}}
+        <div class="tags">
+            {{#foreach tags}}
+            <a href="{{url}}" class="label label-info">{{name}}</a>
+            {{/foreach}}
+        </div>
+        {{/if}}
+    </div>
+</article>
+
+<!-- Prev & Next pots -->
+{{#prev_post}}
+<article class="prev-next-post">
+    <div class="container limit-width">
+        <b>PREV POST</b>: <a href="{{url}}">{{title}}</a>
+        <time>{{date}}</time>
+    </div>
+</article>
+{{/prev_post}}
+
+{{#next_post}}
+<article class="prev-next-post">
+    <div class="container limit-width">
+        <b>NEXT POST</b>: <a href="{{url}}">{{title}}</a>
+        <time>{{date}}</time>
+    </div>
+</article>
+{{/next_post}}
+
+<!-- Comments -->
+<section class="comment">
+    <div class="container limit-width">
+	   {{> addons/comment}}
+    </div>
+</section>
+
+{{/post}}
