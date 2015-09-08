@@ -2,6 +2,15 @@ body{ background-color: #e4e4e4; color: #333333; }
 
 p > img{ max-width: 100%; margin-top: 15px; }
 
+::-moz-selection {
+   background-color: #e74c3c;
+   color: #fff;
+}
+::selection {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
 article,
 section{ margin-bottom: 20px; }
 section.home-template,
