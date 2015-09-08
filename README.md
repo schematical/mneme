@@ -9,7 +9,7 @@ http://www.messier219.com
 ![mneme-0.1.0](https://cloud.githubusercontent.com/assets/287376/9726749/0d76f5f8-5632-11e5-8bf1-82d6c3d009c7.png)
 
 # Changelog
-## v0.1.0
+## v0.1.0 - 2015.09.08
 * Initial commit
 
 # Copyright & License
