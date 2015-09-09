@@ -7,20 +7,23 @@
             <h1>{{title}}</h1>
             <time>{{date}}</time>
         </div>
-        {{content}}
 
+		{{content}}
 
-        {{#if tags}}
-        <div class="tags">
-            {{#foreach tags}}
-            <a href="{{url}}" class="label label-info">{{name}}</a>
-            {{/foreach}}
-        </div>
-        {{/if}}
+		<div class="post-bottom-info">
+			<div class="tags">
+				{{#foreach tags}}
+				<a href="{{url}}" class="label label-info">{{name}}</a>
+				{{/foreach}}
+			</div>
+
+			<!-- Share post -->
+			{{> addons/share}}
+		</div>
     </div>
 </article>
 
-<!-- Next & prev pots -->
+<!-- Next pots -->
 {{#next_post}}
 <article class="prev-next-post">
     <div class="container limit-width">
@@ -30,6 +33,7 @@
 </article>
 {{/next_post}}
 
+<!-- Prev pots -->
 {{#prev_post}}
 <article class="prev-next-post">
     <div class="container limit-width">
