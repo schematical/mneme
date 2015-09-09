@@ -32,6 +32,8 @@ footer p > a:hover{ color: inherit; }
 .grid-item-image.loading > .thumbnail > .image-wrapper{ background-color: #e74c3c; }
 .grid-item-image.unloaded > .thumbnail > .image-wrapper > img,
 .grid-item-image.loading > .thumbnail > .image-wrapper > img{ visibility: hidden; height: 140px; }
+.grid-empty{ text-align: center; height: 500px; line-height: 500px; }
+.grid-empty > span{ color: #989898; font-size: 36px; }
 
 div.tags{ border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px; }
 
