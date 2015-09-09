@@ -14,12 +14,13 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" href="{{asset "libraries/bootstrap/css/bootstrap.min.css"}}" charset="utf8" />
+	<link rel="stylesheet" href="{{asset "libraries/bootstrap/css/bootstrap.min.css"}}" charset="utf8" />
 	<link rel="stylesheet" href="{{asset "libraries/prism/prism.css"}}" charset="utf8" />
 	<link rel="stylesheet" href="{{asset "libraries/bootstrap-social/css/bootstrap-social.css"}}" charset="utf8" />
 	<link rel="stylesheet" href="{{asset "libraries/bootstrap-social/css/font-awesome.css"}}" charset="utf8" />
-    <link rel="stylesheet" href="{{asset "css/bootstrap_messier219.css"}}" charset="utf8" />
-    <link rel="stylesheet" href="{{asset "css/layout.css"}}" charset="utf8" />
+    <link rel="stylesheet/less" href="{{asset "css/style.less"}}" charset="utf8" />
+
+	<script src="{{asset "libraries/less/less.min.js"}}"></script>
 
 	{{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
