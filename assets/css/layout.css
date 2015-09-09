@@ -42,3 +42,5 @@ div.tags{ border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px; }
 .author-profile pre{ background-color: transparent; color: inherit; font-size: inherit; font-family: inherit; border: none; }
 .author-profile.author-profile-cover{ color: #ffffff; }
 .author-profile.author-profile-cover a{ color: #ffffff; }
+
+.tag-template .page-header h1{ margin-top: 0; }

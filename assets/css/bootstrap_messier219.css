@@ -25,7 +25,7 @@ section.tag-template .page-header small{ color: inherit; }
 .navbar-default .navbar-toggle:focus{ background-color: transparent; }
 .navbar-default .navbar-nav > li > a{ color: #ffffff; }
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus{ color: #FFB8B1; }
+.navbar-default .navbar-nav > li > a:focus{ color: #E74C3C; background-color: #F9F9F9; }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form{ border: none; }
 .navbar-default .navbar-nav > .active > a,
@@ -41,6 +41,11 @@ section.tag-template .page-header small{ color: inherit; }
 .nav>li>a{ padding: 15px 10px; }
 
 .pager li>a{ color: #333333; }
+
+.btn-alizarin{ background-color: #e74c3c; border-color: #CF3C2D; color: #fff; }
+.btn-alizarin:hover,
+.btn-alizarin:focus{ background-color: #FF7C6F; border-color: #D8685D; color: #fff;
+}
 
 @media (min-width: 1200px){
     .container.limit-width { width: 970px; }
