@@ -8,7 +8,7 @@
     <meta name="description" content="Thoughts, stories and ideas." />
 
 	{{! Page Meta }}
-	<title>{{@blog.title}}</title>
+	<title>{{meta_title}}</title>
 
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="viewport" content="width=device-width, user-scalable=no">
@@ -26,7 +26,7 @@
 </head>
 <body class="{{body_class}}">
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" {{#if @blog.cover}}style="background-image: url('{{@blog.cover}}'); background-size: cover;"{{/if}}>
         <div class="container limit-width">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
