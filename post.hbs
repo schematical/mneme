@@ -20,16 +20,7 @@
     </div>
 </article>
 
-<!-- Prev & Next pots -->
-{{#prev_post}}
-<article class="prev-next-post">
-    <div class="container limit-width">
-        <b>PREV POST</b>: <a href="{{url}}">{{title}}</a>
-        <time>{{date}}</time>
-    </div>
-</article>
-{{/prev_post}}
-
+<!-- Next & prev pots -->
 {{#next_post}}
 <article class="prev-next-post">
     <div class="container limit-width">
@@ -38,6 +29,15 @@
     </div>
 </article>
 {{/next_post}}
+
+{{#prev_post}}
+<article class="prev-next-post">
+    <div class="container limit-width">
+        <b>PREV POST</b>: <a href="{{url}}">{{title}}</a>
+        <time>{{date}}</time>
+    </div>
+</article>
+{{/prev_post}}
 
 <!-- Comments -->
 <section class="comment">
