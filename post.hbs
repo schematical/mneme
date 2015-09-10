@@ -23,25 +23,7 @@
     </div>
 </article>
 
-<!-- Next pots -->
-{{#next_post}}
-<article class="prev-next-post">
-    <div class="container limit-width">
-        <b>NEXT POST</b>: <a href="{{url}}">{{title}}</a>
-        <time>{{date}}</time>
-    </div>
-</article>
-{{/next_post}}
-
-<!-- Prev pots -->
-{{#prev_post}}
-<article class="prev-next-post">
-    <div class="container limit-width">
-        <b>PREV POST</b>: <a href="{{url}}">{{title}}</a>
-        <time>{{date}}</time>
-    </div>
-</article>
-{{/prev_post}}
+{{> prev_next_post}}
 
 <!-- Comments -->
 <section class="comment">

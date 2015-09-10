@@ -39,6 +39,58 @@ footer p > a:hover{ color: inherit; }
 .grid-empty{ text-align: center; height: 500px; line-height: 500px; }
 .grid-empty > span{ color: #989898; font-size: 36px; }
 
+/* Prev next post style */
+.prev-next-post div[class^="col-"]{
+	text-align: center;
+}
+
+.prev-next-post a,
+.prev-next-post a:hover{
+	height: 150px;
+	display: inline-block;
+	width: 100%;
+	z-index: 1;
+	color: @default-foreground;
+	text-decoration: none;
+	background-size: cover;
+	background-position: center center;
+	background-color: #b4b4b4;
+}
+
+.prev-next-post a:before{
+	position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+	right: 15px;
+	bottom: 0;
+	left: 15px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.prev-next-post a:hover:before{
+	background-color: rgba(0,0,0,0.1);
+	transition-duration: 0.2s;
+}
+
+.prev-next-post .post-meta-info{
+    display: inline-block;
+    z-index: 2;
+	position: relative;
+	margin-top: 50px;
+}
+
+.prev-next-post .post-meta-info h4{
+	padding: 2px 5px 2px 5px; margin: 0;
+	background-color: @default-background;
+	display: inline;
+}
+
+.prev-next-post .post-meta-info h3{
+	margin: 10px 0 0 0; padding: 0;
+	/*font-weight: bold;*/
+}
+
 .post-bottom-info{ display: inline-block; width: 100%; margin-top: 40px; }
 div.tags{ display: inline-block; float: left; }
 div.share{ display: inline-block; float: right; /*color: #989898;*/ }
@@ -53,18 +105,12 @@ div.share{ display: inline-block; float: right; /*color: #989898;*/ }
 
 .tag-template .page-header h1{ margin-top: 0; }
 
-
-
 /* Bootstrap custom */
 a,
 a:hover{ color: @default-background; }
 
 article .container,
 section .container{ background-color: #ffffff; padding: 15px; }
-article.prev-next-post{  }
-article.prev-next-post a{ color: #333333; }
-article.prev-next-post a:hover{ color: @default-background; }
-article.prev-next-post time{ float: right; font-size: small; color: #959595; }
 section.archive-template .container,
 section.tag-template .container,
 section.home-template .container{ background-color: transparent; }
@@ -106,6 +152,9 @@ section.tag-template .page-header small{ color: inherit; }
 .btn-alizarin:hover,
 .btn-alizarin:focus{ background-color: #FF7C6F; border-color: #D8685D; color: @default-foreground;
 }
+.btn-social{ border: none; }
+.btn-social>:first-child{ border-right: none; }
+.btn-social.btn-sm{ padding-left: 27px; }
 
 @media (min-width: 1200px){
     .container.limit-width { width: 970px; }
