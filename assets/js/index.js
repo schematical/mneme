@@ -1,20 +1,21 @@
-$(document).ready(function(){
-    var $gridItems = $('.grid .grid-item');
+/*global
+	$
+*/
+$(document).ready(function () {
+	'use strict';
+    var $gridItems = $('.grid .grid-item'),
+		$grid;
+
     $gridItems.show();
-    var $grid = $('.grid').masonry({
+    $grid = $('.grid').masonry({
         itemSelector: '.grid-item'
     });
-    $grid.imagesLoaded().progress(function( imgLoad, image ){
-        //console.log('progress', imgLoad, image);
+    $grid.imagesLoaded().progress(function (imgLoad, image) {
         var $gridItem = $(image.img).parents('.grid-item');
         $gridItem.removeClass('loading');
-        /*$(image.img).parents('.image-wrapper').animate({
-            'background-color': 'transfert'
-        }, 500);*/
-        //console.log(image.isLoaded);
-        if( image.isLoaded ){
+        if (image.isLoaded) {
             $gridItem.addClass('loaded');
-        }else{
+        } else {
             $gridItem.addClass('unloaded');
         }
         $grid.masonry('layout');
