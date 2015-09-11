@@ -5,8 +5,8 @@ Theme for Ghost blog platform.
 http://www.messier219.com
 
 # Screenshot
-![mneme-0.1.0](https://cloud.githubusercontent.com/assets/287376/9753142/d1fbb8d4-56f3-11e5-9fe4-f52dd9f5b2ff.png)
-![mneme-0.1.0](https://cloud.githubusercontent.com/assets/287376/9726749/0d76f5f8-5632-11e5-8bf1-82d6c3d009c7.png)
+![mneme-0.2.0](https://cloud.githubusercontent.com/assets/287376/9805464/37d8a424-5874-11e5-862d-448c299a23ee.png)
+![mneme-0.2.0](https://cloud.githubusercontent.com/assets/287376/9805466/39eb5f18-5874-11e5-88d6-ad27529ab420.png)
 
 # Copyright & License
 Copyright (C) 2015 Messier219 - Released under the MIT License.
