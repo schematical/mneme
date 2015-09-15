@@ -1,4 +1,6 @@
-@default-background: #e74c3c;
+/*@default-background: #FF0000;*/
+/*@default-background: #f4321e;*/
+@default-background: #E6192C;
 @default-foreground: #ffffff;
 
 body{ background-color: #e4e4e4; color: #333333; font-size: medium; }
@@ -6,12 +8,12 @@ body{ background-color: #e4e4e4; color: #333333; font-size: medium; }
 p > img{ max-width: 100%; margin-top: 15px; }
 
 ::-moz-selection {
-   background-color: @default-background;
-   color: #fff;
+	background-color: @default-background;
+   	color: @default-foreground;
 }
 ::selection {
     background-color: @default-background;
-    color: #fff;
+    color: @default-foreground;
 }
 
 article,
