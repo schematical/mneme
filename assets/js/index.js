@@ -2,7 +2,7 @@
 	$
 */
 $(document).ready(function () {
-	'use strict';
+	'use strict'; // branch
     var $gridItems = $('.grid .grid-item'),
 		$grid;
 
