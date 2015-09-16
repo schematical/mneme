@@ -1,5 +1,6 @@
 # Mneme
-Theme for Ghost blog platform.
+Mneme is theme for Ghost blog platform Using marsonry library.
+Without masonry library version is [without_masonry branch](https://github.com/messier219/mneme/tree/without_masonry).
 
 # Demo
 http://www.messier219.com
