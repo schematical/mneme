@@ -2,17 +2,19 @@
 	$
 */
 $(document).ready(function () {
-	'use strict'; // branch
-    var $gridItems = $('.grid .grid-item'),
-		$grid;
 
-    $gridItems.show();
-    $grid = $('.grid').masonry({
+	'use strict';
+
+	var $grid = $('.grid'),
+		$textItems = $grid.find('.grid-item');
+
+	$grid = $('.grid').masonry({
         itemSelector: '.grid-item'
     });
+
     $grid.imagesLoaded().progress(function (imgLoad, image) {
         var $gridItem = $(image.img).parents('.grid-item');
-        $gridItem.removeClass('loading');
+        $gridItem.fadeIn().removeClass('loading');
         if (image.isLoaded) {
             $gridItem.addClass('loaded');
         } else {

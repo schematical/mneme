@@ -29,13 +29,13 @@ footer p > a:hover{ color: inherit; }
 .widgets{ text-align: center; margin: 50px 0 20px 0; }
 .widgets > .widget{ display: inline-block;}
 
-.grid-item-image{ display: none; }
-.grid-item-image > .thumbnail > .image-wrapper{  }
-.grid-item-image > .thumbnail > .image-wrapper > img{ width: 100%; }
-.grid-item-image.unloaded > .thumbnail > .image-wrapper,
-.grid-item-image.loading > .thumbnail > .image-wrapper{ background-color: @default-background; }
-.grid-item-image.unloaded > .thumbnail > .image-wrapper > img,
-.grid-item-image.loading > .thumbnail > .image-wrapper > img{ visibility: hidden; height: 140px; }
+.grid-item{ display: none; }
+.grid-item > .thumbnail > .image-wrapper{  }
+.grid-item > .thumbnail > .image-wrapper > img{ width: 100%; }
+.grid-item.unloaded > .thumbnail > .image-wrapper,
+.grid-item.loading > .thumbnail > .image-wrapper{ background-color: @default-background; }
+.grid-item.unloaded > .thumbnail > .image-wrapper > img,
+.grid-item.loading > .thumbnail > .image-wrapper > img{ visibility: hidden; height: 140px; }
 .grid-empty{ text-align: center; height: 500px; line-height: 500px; }
 .grid-empty > span{ color: #989898; font-size: 36px; }
 
@@ -113,7 +113,7 @@ article .container,
 section .container{ background-color: #ffffff; padding: 15px; }
 section.archive-template .container,
 section.tag-template .container,
-section.home-template .container{ background-color: transparent; }
+section.home-template .container{ background-color: transparent; padding: 0; }
 section.tag-template .page-header{ border-bottom: none; color: #989898; margin: 0; }
 section.tag-template .page-header small{ color: inherit; }
 
