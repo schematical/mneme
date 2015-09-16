@@ -60,6 +60,11 @@
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
+	<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {
+			document.write('<script type="text/javascript" src="{{asset "libraries/jquery/jquery-1.11.3.min.js"}}"></'+'script>');
+	  	}
+	</script>
     <script src="{{asset "libraries/bootstrap/js/bootstrap.min.js"}}"></script>
     <script src="{{asset "libraries/imagesloaded/imagesloaded.pkgd.min.js"}}"></script>
     <script src="{{asset "libraries/masonry/masonry.pkgd.min.js"}}"></script>
