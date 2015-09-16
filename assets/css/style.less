@@ -118,8 +118,9 @@ section.home-template .container{ background-color: transparent; padding: 0; }
 section.tag-template .page-header{ border-bottom: none; color: #989898; margin: 0; }
 section.tag-template .page-header small{ color: inherit; }
 
-.navbar{ background-color: @default-background; border: none; border-radius: 0 !important; }
-.navbar-brand.img{ display: inline-block; max-height: 50px; line-height: 50px; padding: 0; }
+.navbar{ background-color: @default-background; border: none; border-radius: 0 !important; background-size: cover; background-position: center center; }
+.navbar-brand.img{ display: inline-block; padding: 0; }
+.navbar-brand.img > img{ max-height: 100%; }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{ color: @default-foreground; font-size: xx-large; }
@@ -145,7 +146,7 @@ section.tag-template .page-header small{ color: inherit; }
 
 .page-header{ margin: 20px 0 20px; text-align: center; }
 
-.nav>li>a{ padding: 15px 10px; }
+.nav>li>a{  }
 
 .pager li>a{ color: #333333; }
 
