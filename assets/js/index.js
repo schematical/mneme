@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     $grid.imagesLoaded().progress(function (imgLoad, image) {
         var $gridItem = $(image.img).parents('.grid-item');
-        $gridItem.fadeIn().removeClass('loading');
+        $gridItem.fadeIn('fast').removeClass('loading');
         if (image.isLoaded) {
             $gridItem.addClass('loaded');
         } else {
